@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let item of products; index as id">  
+        <label [for]="id" (click)="goTo(id)" for="">{{ item.name }} {{ item.price }}  </label> 
+    </li>
+</ul>
